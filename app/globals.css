@@ -1,26 +1,111 @@
-@import "tailwindcss";
-
 :root {
+  /* Brand Colors */
+  --color-gold: #D7B068;
+  --color-navy: #002348;
+  --color-teal: #1D8987;
+  
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground: #333333;
+  --background-secondary: #f4f6f8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #00152b; /* Dark navy background */
+    --foreground: #f4f6f8;
+    --background-secondary: #002348;
   }
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
 body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-navy);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-gold);
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Utilities */
+.text-gold { color: var(--color-gold); }
+.text-navy { color: var(--color-navy); }
+.text-teal { color: var(--color-teal); }
+.bg-navy { background-color: var(--color-navy); }
+.bg-teal { background-color: var(--color-teal); }
+.bg-gold { background-color: var(--color-gold); }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-navy);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--color-teal);
+}
+
+.btn-secondary {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+.btn-secondary:hover {
+  background-color: #c49d56;
 }
