@@ -2,17 +2,30 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import PracticeAreas from './components/PracticeAreas';
 import Values from './components/Values';
+import WhoWeServe from './components/WhoWeServe';
+import ClientMarquee from './components/ClientMarquee';
 import Footer from './components/Footer';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main style={{ backgroundColor: '#ffffff' }}>
         <HeroSection />
         
-        <section style={{ padding: '6rem 2rem', backgroundColor: '#fff', textAlign: 'center' }}>
-          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <section style={{ 
+          padding: '6rem 2rem', 
+          backgroundColor: '#fff', 
+          textAlign: 'center',
+          backgroundImage: 'url(/healthcare-signage.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          position: 'relative'
+        }}>
+          {/* Overlay */}
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(255, 255, 255, 0.95)', zIndex: 1 }}></div>
+          <div style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--color-navy)' }}>
               A healthcare-first firm that <br/>
               <span style={{ color: 'var(--color-teal)' }}>happens to communicate exceptionally well.</span>
@@ -25,8 +38,10 @@ export default function Home() {
 
         <PracticeAreas />
         <Values />
+        <WhoWeServe />
         
       </main>
+      <ClientMarquee />
       <Footer />
     </>
   );

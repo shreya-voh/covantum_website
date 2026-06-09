@@ -3,60 +3,90 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  transition: all 0.5s ease;
-  padding: 1.5rem 0;
+  z-index: 100;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.15rem 0;
+  background: #ffffff;
 }
 
 .headerScrolled {
-  background: rgba(0, 35, 72, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 1rem 0;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: flex;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.logoLink {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logoLink:hover {
+  transform: scale(1.02);
+}
+
+.navDesktop {
+  display: none;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.logoAccent {
-  color: var(--color-teal);
-}
-
-.logoGold {
-  color: var(--color-gold);
-}
-
-.nav {
-  display: flex;
   gap: 2.5rem;
-  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navDesktop {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navDesktop {
+    gap: 1.2rem;
+  }
+  
+  .navLink {
+    font-size: 0.85rem;
+  }
+  
+  .contactBtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navDesktop {
+    gap: 2.5rem;
+  }
 }
 
 .navLink {
-  color: white;
-  font-weight: 500;
   font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--color-navy);
+  text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
+}
+
+/* When scrolled, nav text turns navy */
+.headerScrolled .navLink {
+  color: var(--color-navy);
 }
 
 .navLink::after {
@@ -64,14 +94,14 @@
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 2px;
-  background-color: var(--color-gold);
+  background: var(--gradient-brand);
   transition: width 0.3s ease;
 }
 
 .navLink:hover {
-  color: var(--color-gold);
+  color: var(--color-teal);
 }
 
 .navLink:hover::after {
@@ -79,17 +109,69 @@
 }
 
 .contactBtn {
-  background-color: var(--color-gold);
-  color: var(--color-navy);
+  background: var(--color-navy);
+  color: white;
   padding: 0.6rem 1.5rem;
-  border-radius: 50px;
+  border-radius: 999px;
   font-weight: 600;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  box-shadow: 0 4px 14px rgba(0, 35, 72, 0.2);
 }
 
 .contactBtn:hover {
-  background-color: transparent;
-  color: var(--color-gold);
-  border-color: var(--color-gold);
+  background: var(--color-teal);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 137, 135, 0.3);
+}
+
+.mobileMenuBtn {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--color-navy);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.headerScrolled .mobileMenuBtn {
+  color: var(--color-navy);
+}
+
+@media (min-width: 768px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
+
+.mobileNav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--surface-primary);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.mobileNavLink {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.mobileContactBtn {
+  display: inline-block;
+  background: var(--color-navy);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
 }

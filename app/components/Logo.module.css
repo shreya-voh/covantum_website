@@ -1,0 +1,70 @@
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+/* Hexagon SVG Mark */
+.mark {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+/* The inner cutout inherits from parent context */
+.hexHole {
+  color: transparent;
+}
+
+/* On dark backgrounds (hero), the hole should be the dark bg color */
+/* We handle this by making it transparent — the SVG shapes create the visual */
+
+/* Text Block */
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.brandName {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+/* Footer context — always navy */
+:global(.footerLogo) .brandName {
+  color: #002348;
+}
+
+.accentN {
+  color: #1D8987;
+}
+
+.tagline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #D7B068;
+  margin-top: 0.35rem;
+  text-transform: uppercase;
+}
+
+.taglineLine {
+  flex: 1;
+  height: 1px;
+  background-color: #D7B068;
+  opacity: 0.5;
+}

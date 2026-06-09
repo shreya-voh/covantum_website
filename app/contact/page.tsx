@@ -8,12 +8,14 @@ export default function Contact() {
     <>
       <Header />
       <main>
-        <section style={{ 
-          padding: '10rem 2rem 6rem', 
-          backgroundColor: 'var(--color-navy)', 
-          color: 'white',
-          textAlign: 'center'
-        }}>
+        <section
+  style={{
+    padding: '6rem 2rem 0.8rem',
+    backgroundColor: 'var(--color-navy)',
+    color: 'white',
+    textAlign: 'center',
+  }}
+>
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <h1 style={{ fontSize: '3.5rem', color: 'white', marginBottom: '1.5rem' }}>
               Get in <span style={{ color: 'var(--color-gold)' }}>Touch</span>
@@ -28,7 +30,7 @@ export default function Contact() {
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem' }}>
             
             <div style={{ background: 'white', padding: '3rem', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
-              <h2 style={{ fontSize: '2rem', marginBottom: '2rem' }}>Send a Message</h2>
+              <h2 style={{ fontSize: '2rem', marginBottom: '2rem',color:"#002348" }}>Send a Message</h2>
               <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} onSubmit={(e) => e.preventDefault()}>
                 <div>
                   <label htmlFor="name" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500', color: 'var(--color-navy)' }}>Full Name</label>
@@ -47,23 +49,43 @@ export default function Contact() {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
-              <div>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-teal)' }}>Office Location</h3>
-                <p style={{ color: '#555', lineHeight: '1.6', fontSize: '1.1rem' }}>
-                  <strong>Covantum Headquarters</strong><br />
-                  123 Healthcare Boulevard<br />
-                  Business District, Mumbai<br />
-                  India 400001
-                </p>
-              </div>
               
+              <div>
+  <h3
+    style={{
+      fontSize: '1.5rem',
+      marginBottom: '1rem',
+      color: 'var(--color-teal)',
+    }}
+  >
+    Office Location
+  </h3>
+
+  <p
+    style={{
+      color: '#555',
+      lineHeight: '1.8',
+      fontSize: '1.1rem',
+    }}
+  >
+    {/* <strong>Corporate Office</strong> */}
+    {/* <br /> */}
+    104, First Floor, Tower B
+    <br />
+    Unitech Business Zone
+    <br />
+    Sector 50, Gurgaon
+    <br />
+    Haryana - 122018
+  </p>
+</div>
               <div>
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--color-teal)' }}>Contact Information</h3>
                 <p style={{ color: '#555', lineHeight: '1.6', fontSize: '1.1rem' }}>
                   <strong>Email:</strong><br />
                   info@covantum.com<br /><br />
                   <strong>Phone:</strong><br />
-                  +91 98765 43210
+                  +91 95991 93575
                 </p>
               </div>
 

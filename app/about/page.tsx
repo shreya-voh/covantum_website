@@ -19,11 +19,17 @@ export default function About() {
         }}>
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
             <h1 style={{ fontSize: '3.5rem', color: 'white', marginBottom: '1.5rem' }}>
-              About <span style={{ color: 'var(--color-gold)' }}>Covantum</span>
+              About <span style={{ color: 'var(--color-gold)' }}>Us</span>
             </h1>
             <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.9)', fontWeight: '300' }}>
-              We partner with healthcare companies, brands, and medical professionals to translate complex clinical knowledge into clear, credible, and impactful communication.
-            </p>
+              Covantum is a healthcare advisory and communications firm built at the intersection of science, strategy, data, and emerging technology. We partner with healthcare companies, brands, and medical professionals to translate complex clinical knowledge into clear, credible, and impactful communication.
+<br/>
+Whatever the challenge — strategic, scientific, or commercial — Covantum brings rigour to every conversation and precision to every outcome.
+<br/>
+We understand the regulatory environment, the clinical mindset, and the commercial imperatives of the healthcare industry — and we work fluently across all three.
+<br/>
+Founded by healthcare professionals with deep roots in medical education, research, and digital media, Covantum is not a generalist agency that works in healthcare. We are a healthcare-first firm that happens to communicate exceptionally well.
+              </p>
           </div>
         </section>
 

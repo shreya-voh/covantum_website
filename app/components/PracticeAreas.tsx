@@ -1,67 +1,102 @@
 "use client";
 
+import { motion } from 'framer-motion';
+import { BrainCircuit, Microscope, BarChart3, Target } from 'lucide-react';
 import styles from './PracticeAreas.module.css';
 
 const practices = [
   {
-    title: "Strategic Advisory",
-    desc: "Rigorous strategic thinking applied to commercial and medical challenges to drive clear outcomes.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle>
-      </svg>
-    )
+    title: "Healthcare Advisory",
+    desc: "Strategic consulting for healthcare companies, brands, hospital groups, and health-tech firms. Market access, brand strategy, stakeholder engagement, and regulatory navigation.",
+    icon: <BrainCircuit size={32} />,
+    colorClass: styles.gold
   },
   {
     title: "Scientific Communications",
-    desc: "Evidence-based communication that translates complex clinical knowledge into impactful narratives.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 12h4l2-9 5 18 3-9h6"></path>
-      </svg>
-    )
+    desc: "End-to-end medical writing and publication support — survey design, data analysis, manuscript preparation, author coordination, and journal submission. Compliant publication services for healthcare companies.",
+    icon: <Microscope size={32} />,
+    colorClass: styles.teal
   },
   {
-    title: "Data-Driven Digital Strategy",
-    desc: "Precision digital strategies that help healthcare organizations reach the right audiences effectively.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10v4"></path><path d="M10 12h4"></path>
-      </svg>
-    )
+    title: "Doctor Outreach & Engagement",
+    desc: "Multi-channel programmes connecting healthcare brands with clinicians — continuing medical education support, webinars, podcasts for doctors, and scientific community building.",
+    icon: <BarChart3 size={32} />,
+    colorClass: styles.navy
   },
   {
-    title: "Brand Consulting",
-    desc: "Building lasting credibility with doctors, patients, and industry stakeholders through authentic branding.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"></circle><path d="m12 8 4 4-4 4"></path><path d="M8 12h8"></path>
-      </svg>
-    )
+    title: "Digital Marketing, Media & Technology",
+    desc: "Performance-driven digital campaigns — SEO, social media, content marketing, multimedia production, targeted digital outreach to doctors and healthcare professionals across compliant platforms and Tech & AI products.",
+    icon: <Target size={32} />,
+    colorClass: styles.goldTeal
   }
 ];
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15
+    }
+  }
+};
+
+const itemVariants: any = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.215, 0.61, 0.355, 1]
+    }
+  }
+};
 
 export default function PracticeAreas() {
   return (
     <section id="practice-areas" className={styles.section}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.header}>
-          <h2 className={styles.title}>Practice <span>Areas</span></h2>
-          <p>Distinct specialities, unified by a commitment to precision and trust.</p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className={styles.title}>
+              What We <span className="text-teal">Do</span>
+            </h2>
+            <p className={styles.subtitle}>
+              we operates across four practice areas — each distinct, but all connected by the same commitment to precision and trust.</p>
+          </motion.div>
         </div>
         
-        <div className={styles.grid}>
+        <motion.div 
+          className={styles.bentoGrid}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           {practices.map((practice, index) => (
-            <div key={index} className={styles.card}>
-              <div className={styles.hexagon}></div>
-              <div className={styles.iconWrapper}>
-                <div className={styles.icon}>{practice.icon}</div>
+            <motion.div 
+              key={index} 
+              className={`${styles.card} ${practice.colorClass}`}
+              variants={itemVariants}
+            >
+              <div className={styles.cardHeader}>
+                <div className={styles.iconWrapper}>
+                  {practice.icon}
+                </div>
+                <h3 className={styles.cardTitle}>{practice.title}</h3>
               </div>
-              <h3 className={styles.cardTitle}>{practice.title}</h3>
               <p className={styles.cardDesc}>{practice.desc}</p>
-            </div>
+              
+              <div className={styles.hexagonAccent}></div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

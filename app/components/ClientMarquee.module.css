@@ -1,0 +1,74 @@
+.marqueeSection {
+  padding: 4rem 0;
+  background-color: var(--surface-primary);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.label {
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .label {
+    color: var(--color-gold);
+  }
+}
+
+.marqueeWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Add fading edges */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeContent {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 40s linear infinite;
+  width: max-content;
+}
+
+.clientItem {
+  display: inline-block;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  opacity: 0.4;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .clientItem {
+    color: white;
+  }
+}
+
+.clientItem:hover {
+  opacity: 1;
+  color: var(--color-teal);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
