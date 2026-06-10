@@ -85,7 +85,7 @@ export default function Footer() {
   </div>
 </div>
 
-<div className={styles.linkGroup}>
+{/* <div className={styles.linkGroup}>
   <h4>Registered Office</h4>
 
   <ul>
@@ -104,7 +104,7 @@ export default function Footer() {
     info@covantum.com
   </Link>
 </div>
-</div>
+</div> */}
               {/* <div className={styles.linkGroup}>
                 <h4>COVANTUM TV</h4>
                 <ul>
