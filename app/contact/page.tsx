@@ -72,10 +72,9 @@ export default function PrivacyPolicyPage() {
       textDecoration: "none",
     }}
   >
-    contact@covantum.com
+     contact@covantum.com
   </a>
             </Paragraph>
-
          <Paragraph>
   Phone:{" "}
   <a
@@ -96,7 +95,7 @@ export default function PrivacyPolicyPage() {
                 fontSize: "0.95rem",
               }}
             >
-              Last Updated: June 2026
+              Last Updated:June 2026
             </p>
           </div>
         </section>
