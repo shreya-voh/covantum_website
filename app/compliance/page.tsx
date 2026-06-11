@@ -24,19 +24,20 @@ export default function PrivacyPolicyPage() {
               marginBottom: "1rem",
             }}
           >
-            Contact <span style={{ color: "var(--color-gold)" }}>&</span>  <span style={{ color: "var(--color-teal)"}} >Grievance</span>
+            Compliance  <span style={{ color: "var(--color-gold)" }}>& Ethics</span>  <span style={{ color: "var(--color-teal)"}} >Statement</span>
           </h1>
+  
 
-          <p
+    <p
             style={{
               maxWidth: "800px",
               margin: "0 auto",
               fontSize: "1.1rem",
               color: "rgba(255,255,255,0.85)",
             }}
-          >
-               Contact us for inquiries, feedback, or grievance resolution. We are committed
-  to responding in a timely and professional manner. </p>
+          > Our commitment to ethical conduct, regulatory compliance, and responsible
+  business practices.</p>
+          
         </section>
 
         {/* Content Section */}
@@ -61,34 +62,9 @@ export default function PrivacyPolicyPage() {
             {/* <SectionTitle>Contact Us</SectionTitle> */}
 
             <Paragraph>
-                For questions regarding our policies, privacy practices, or website content, please contact us at:   
-            </Paragraph>
-  <Paragraph>
-            Email: <a
-    href="mailto:contact@covantum.com"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    contact@covantum.com
-  </a>
-            </Paragraph>
-
-         <Paragraph>
-  Phone:{" "}
-  <a
-    href="tel:+919599193575"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    +91 95991 93575
-  </a>
+               We are committed to ethical, transparent, and compliant healthcare communications. Our services are designed to support responsible stakeholder engagement and adhere to applicable industry guidelines and regulatory requirements, including UCPMP principles where relevant.
 </Paragraph>
+  
             <p
               style={{
                 marginTop: "3rem",

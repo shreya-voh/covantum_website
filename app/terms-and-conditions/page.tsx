@@ -24,9 +24,10 @@ export default function PrivacyPolicyPage() {
               marginBottom: "1rem",
             }}
           >
-            Contact <span style={{ color: "var(--color-gold)" }}>&</span>  <span style={{ color: "var(--color-teal)"}} >Grievance</span>
+            Terms <span style={{ color: "var(--color-gold)" }}>of Use</span>
           </h1>
 
+          
           <p
             style={{
               maxWidth: "800px",
@@ -35,8 +36,8 @@ export default function PrivacyPolicyPage() {
               color: "rgba(255,255,255,0.85)",
             }}
           >
-               Contact us for inquiries, feedback, or grievance resolution. We are committed
-  to responding in a timely and professional manner. </p>
+              Please review these Terms of Use carefully before accessing or using the
+  Covantum website. </p>
         </section>
 
         {/* Content Section */}
@@ -58,37 +59,14 @@ export default function PrivacyPolicyPage() {
           >
        
 
-            {/* <SectionTitle>Contact Us</SectionTitle> */}
+            {/* <SectionTitle>3. Cookies and Analytics</SectionTitle> */}
 
-            <Paragraph>
-                For questions regarding our policies, privacy practices, or website content, please contact us at:   
-            </Paragraph>
-  <Paragraph>
-            Email: <a
-    href="mailto:contact@covantum.com"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    contact@covantum.com
-  </a>
-            </Paragraph>
+<Paragraph>
+  By using this website, you agree to use it lawfully and responsibly. All content on this website is owned by or licensed to  <strong style={{ color: "#002B5B" }}>Covantum</strong> and may not be reproduced without permission. We reserve the right to modify website content at any time without notice.
 
-         <Paragraph>
-  Phone:{" "}
-  <a
-    href="tel:+919599193575"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    +91 95991 93575
-  </a>
+
 </Paragraph>
+
             <p
               style={{
                 marginTop: "3rem",

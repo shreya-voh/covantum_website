@@ -12,18 +12,11 @@ export default function Logo({ variant = 'compact' }: LogoProps) {
       <Image
   src="/cov_logo.png"
   alt="Covantum Logo"
-  width={100}
-  height={80}
+  // width={160}
+  // height={45}
+    width={190}
+  height={55}
 />
-      {/* <Image
-  src="/covantumlogo.png"
-  alt="Covantum Logo"
-  width={80}
-  height={80}
-  loading="eager"
-/> */}
-      {/* Text */}
-      {/* <span className={styles.brandName}>COVANTUM</span> */}
     </div>
   );
 }

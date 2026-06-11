@@ -24,19 +24,20 @@ export default function PrivacyPolicyPage() {
               marginBottom: "1rem",
             }}
           >
-            Contact <span style={{ color: "var(--color-gold)" }}>&</span>  <span style={{ color: "var(--color-teal)"}} >Grievance</span>
+            Medical <span style={{ color: "var(--color-gold)" }}>Disclaimer</span>  
           </h1>
 
-          <p
+
+   <p
             style={{
               maxWidth: "800px",
               margin: "0 auto",
               fontSize: "1.1rem",
               color: "rgba(255,255,255,0.85)",
             }}
-          >
-               Contact us for inquiries, feedback, or grievance resolution. We are committed
-  to responding in a timely and professional manner. </p>
+          > Important information regarding the medical and healthcare content available
+  on the Covantum website.</p>
+          
         </section>
 
         {/* Content Section */}
@@ -61,34 +62,9 @@ export default function PrivacyPolicyPage() {
             {/* <SectionTitle>Contact Us</SectionTitle> */}
 
             <Paragraph>
-                For questions regarding our policies, privacy practices, or website content, please contact us at:   
-            </Paragraph>
-  <Paragraph>
-            Email: <a
-    href="mailto:contact@covantum.com"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    contact@covantum.com
-  </a>
-            </Paragraph>
-
-         <Paragraph>
-  Phone:{" "}
-  <a
-    href="tel:+919599193575"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    +91 95991 93575
-  </a>
-</Paragraph>
+              The information on this website is provided for general informational purposes only and does not constitute medical, clinical, legal, or professional advice. Healthcare decisions should always be made in consultation with qualified professionals.
+           </Paragraph>
+  
             <p
               style={{
                 marginTop: "3rem",

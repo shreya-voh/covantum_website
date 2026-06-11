@@ -24,8 +24,12 @@ export default function PrivacyPolicyPage() {
               marginBottom: "1rem",
             }}
           >
-            Contact <span style={{ color: "var(--color-gold)" }}>&</span>  <span style={{ color: "var(--color-teal)"}} >Grievance</span>
+            Cookie <span style={{ color: "var(--color-gold)" }}>Policy</span>  
           </h1>
+
+            
+
+
 
           <p
             style={{
@@ -35,8 +39,10 @@ export default function PrivacyPolicyPage() {
               color: "rgba(255,255,255,0.85)",
             }}
           >
-               Contact us for inquiries, feedback, or grievance resolution. We are committed
-  to responding in a timely and professional manner. </p>
+            Learn how Covantum uses cookies and similar technologies to improve your
+  experience and enhance website performance. </p>
+
+
         </section>
 
         {/* Content Section */}
@@ -61,34 +67,9 @@ export default function PrivacyPolicyPage() {
             {/* <SectionTitle>Contact Us</SectionTitle> */}
 
             <Paragraph>
-                For questions regarding our policies, privacy practices, or website content, please contact us at:   
-            </Paragraph>
-  <Paragraph>
-            Email: <a
-    href="mailto:contact@covantum.com"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    contact@covantum.com
-  </a>
-            </Paragraph>
-
-         <Paragraph>
-  Phone:{" "}
-  <a
-    href="tel:+919599193575"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    +91 95991 93575
-  </a>
+                This website may use cookies and analytics tools to improve user experience and understand website performance. By continuing to use the site, you consent to such use.
 </Paragraph>
+
             <p
               style={{
                 marginTop: "3rem",

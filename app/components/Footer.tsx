@@ -157,19 +157,25 @@ export default function Footer() {
 
           {/* Bottom Links Row */}
           <div className={styles.bottomLinks}>
-            <Link href="/about">About Us</Link>
+
+
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <span className={styles.dot}>•</span>
-            <Link href="/careers">Careers</Link>
-            {/* <span className={styles.dot}>•</span> */}
-            {/* <Link href="#">Ethics</Link> */}
+
+            <Link href="/terms-and-conditions">Terms & Conditions</Link>
             <span className={styles.dot}>•</span>
-            <Link href="#">Privacy Policy</Link>
-            {/* <span className={styles.dot}>•</span> */}
-            {/* <Link href="#">Refund Policy</Link> */}
+
+            <Link href="/cookie-policy">Cookie Policy</Link>
             <span className={styles.dot}>•</span>
-            <Link href="#">Terms & Conditions</Link>
-            {/* <span className={styles.dot}>•</span> */}
-            {/* <Link href="#">AI Editorial Policy</Link> */}
+
+            <Link href="/medical-disclaimer">Medical Disclaimer </Link>
+              <span className={styles.dot}>•</span>
+
+            <Link href="compliance">Compliance & Ethics Statement</Link>
+            <span className={styles.dot}>•</span>
+
+            <Link href="/contact">Contact/Grievance Information</Link>
+
           </div>
 
         </div>

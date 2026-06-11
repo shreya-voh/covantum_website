@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
               marginBottom: "1rem",
             }}
           >
-            Contact <span style={{ color: "var(--color-gold)" }}>&</span>  <span style={{ color: "var(--color-teal)"}} >Grievance</span>
+            Privacy <span style={{ color: "var(--color-gold)" }}>Policy</span>
           </h1>
 
           <p
@@ -35,8 +35,10 @@ export default function PrivacyPolicyPage() {
               color: "rgba(255,255,255,0.85)",
             }}
           >
-               Contact us for inquiries, feedback, or grievance resolution. We are committed
-  to responding in a timely and professional manner. </p>
+            Your privacy is important to us. This Privacy Policy explains how
+            Covantum collects, uses, and protects your information when you
+            visit our website and interact with our services.
+          </p>
         </section>
 
         {/* Content Section */}
@@ -58,13 +60,15 @@ export default function PrivacyPolicyPage() {
           >
        
 
-            {/* <SectionTitle>Contact Us</SectionTitle> */}
+            {/* <SectionTitle>3. Cookies and Analytics</SectionTitle> */}
 
             <Paragraph>
-                For questions regarding our policies, privacy practices, or website content, please contact us at:   
-            </Paragraph>
-  <Paragraph>
-            Email: <a
+  We respect your privacy. Information submitted through our website,
+  including contact forms and inquiries, is used solely to respond to your
+  requests and provide our services. We do not sell personal information to
+  third parties. We implement reasonable measures to protect the information
+  you share with us. For privacy-related inquiries, please contact us at{" "}
+  <a
     href="mailto:contact@covantum.com"
     style={{
       color: "#002B5B",
@@ -73,22 +77,9 @@ export default function PrivacyPolicyPage() {
     }}
   >
     contact@covantum.com
-  </a>
+  </a>.  
             </Paragraph>
 
-         <Paragraph>
-  Phone:{" "}
-  <a
-    href="tel:+919599193575"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    +91 95991 93575
-  </a>
-</Paragraph>
             <p
               style={{
                 marginTop: "3rem",

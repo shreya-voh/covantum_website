@@ -17,7 +17,6 @@ export default function Home() {
           padding: '6rem 2rem', 
           backgroundColor: '#fff', 
           textAlign: 'center',
-          backgroundImage: 'url(/healthcare-signage.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
