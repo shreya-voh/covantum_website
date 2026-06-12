@@ -18,8 +18,8 @@ const practices = [
     colorClass: styles.teal
   },
   {
-    title: "Doctor Outreach & Engagement",
-    desc: "Multi-channel programmes connecting healthcare brands with clinicians — continuing medical education support, webinars, podcasts for doctors, and scientific community building.",
+    title: "Doctor  & Engagement",
+    desc: "Multi-channel programmes connecting healthcare brands with clinicians — continuing medical education support, webinars, podcasts for doctors, and scientific community building according to regulatory compliance.",
     icon: <BarChart3 size={32} />,
     colorClass: styles.navy
   },

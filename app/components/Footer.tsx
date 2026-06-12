@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { FaInstagram, FaYoutube, FaLinkedin,FaWhatsapp ,FaEnvelope} from 'react-icons/fa';
-
+import Image from "next/image";
 import { RiTwitterXFill } from 'react-icons/ri';
 import Logo from './Logo';
 import styles from './Footer.module.css';
+
 
 const socialLinks = [
   // { Icon: BiLogoFacebook, url: 'https://www.facebook.com/vohglobal', color: '#1877F2', label: 'Facebook' },
@@ -22,121 +23,92 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.topSection}>
         <div className={styles.container}>
-          <div className={styles.mainGrid}>
-            
-            {/* Left Column - Logo & About */}
-            {/* <div className={styles.logoCol}>
-              <div className={styles.logoWrapper}>
-                <Logo />
-              </div>
-              <p className={styles.desc}>
-                Covantum is a healthcare advisory and communications firm built at the intersection of science, strategy, data, and emerging technology.
-              </p>
-            </div> */}
+       <div className={styles.mainGrid}>
 
-            {/* Right Columns - Links Grid */}
-            <div className={styles.linksGrid}>
-              <div className={styles.linkGroup}>
-                <h4>What We Do</h4>
-                <ul>
-                  <li><Link href="#">Healthcare Advisory</Link></li>
-                  <li><Link href="#">Scientific Communications</Link></li>
-                  <li><Link href="#">Doctor Outreach & Engagement</Link></li>
-                  <li><Link href="#">Digital Marketing, Media & Technology</Link></li>
-                  <li><Link href="#">Brand Consulting</Link></li>
-                  <li><Link href="#">Precision Medicine</Link></li>
-                </ul>
-              </div>
-<div className={styles.linkGroup}>
-  <h4>Corporate Office</h4>
+  {/* Left Column - Company Logo & Content */}
 
-  <ul>
-    <li><Link href="#">104, First Floor, Tower B</Link></li>
-    <li><Link href="#">Unitech Business Zone</Link></li>
-    <li><Link href="#">Sector 50, Gurgaon</Link></li>
-    <li><Link href="#">Haryana - 122018</Link></li>
-  </ul>
+  <div className={styles.logoSection}>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      textAlign: "left",
+      width: "100%",
+    }}
+  >
+    
+      <Image
+      src="/cov_logo.png"
+      alt="Covantum Logo"
+      width={190}
+      height={55}
+      style={{
+        filter: "brightness(0) invert(1)",
+        display: "block",
+        marginLeft: 0
+      }}/>
 
-  <div className={styles.contactInfo}>
-    <FaLinkedin
-      size={16}
-      style={{ color: "#0A66C2" }}
-    />
-
-    <Link
-      href="https://www.linkedin.com/company/vohglobal/?viewAsMember=true"
-      target="_blank"
+    <p
+      style={{
+        marginTop: "20px",
+        lineHeight: "1.8",
+        maxWidth: "400px",
+      }}
+      className={styles.companyDesc}
     >
-      LinkedIn
-    </Link>
-  </div>
-  <div className={styles.contactInfo}>
-    <FaWhatsapp
-      size={16}
-      style={{ color: "#25D366" }}
-    />
-
-    <Link
-      href="https://wa.me/919599193575"
-      target="_blank"
-    >
-      +91 95991 93575
-    </Link>
+     Covantum is where healthcare companies, brands, and medical professionals come to think more clearly, communicate more effectively, and grow with purpose.
+   
+    </p>
   </div>
 </div>
 
-{/* <div className={styles.linkGroup}>
-  <h4>Registered Office</h4>
+  {/* Center Column */}
+  <div className={styles.linkGroup}>
+    <h4>What We Do</h4>
+    <ul>
+      <li><Link href="#">Healthcare Advisory</Link></li>
+      <li><Link href="#">Scientific Communications</Link></li>
+      <li><Link href="#">Doctor Outreach & Engagement</Link></li>
+      <li><Link href="#">Digital Marketing, Media & Technology</Link></li>
+      <li><Link href="#">Brand Consulting</Link></li>
+      <li><Link href="#">Precision Medicine</Link></li>
+    </ul>
+  </div>
 
-  <ul>
-    <li><Link href="#">8B/Tower 3, The Hibiscus</Link></li>
-    <li><Link href="#">Sector 50, Nirvana Country</Link></li>
-    <li><Link href="#">South City, Gurgaon</Link></li>
-    <li><Link href="#">Haryana - 122018</Link></li>
-  </ul>
-  <div className={styles.contactInfo}>
-  <FaEnvelope
-    size={16}
-    style={{ color: "#FFFFFF" }}
-  />
+  {/* Right Column */}
+  <div className={styles.linkGroup } >
+    <h4>Corporate Office</h4>
 
-  <Link href="mailto:contact@covantum.com">
-    info@covantum.com
-  </Link>
+    <ul >
+      <li>104, First Floor, Tower B</li>
+      <li>Unitech Business Zone</li>
+      <li>Sector 50, Gurgaon</li>
+      <li>Haryana - 122018</li>
+    </ul>
+
+    <div className={styles.contactInfo}>
+      <FaLinkedin size={16} style={{ color: "#0A66C2" }} />
+      <Link
+        href="https://www.linkedin.com/company/vohglobal/?viewAsMember=true"
+        target="_blank"
+      >
+        LinkedIn
+      </Link>
+    </div>
+
+    <div className={styles.contactInfo}>
+      <FaWhatsapp size={16} style={{ color: "#25D366" }} />
+      <Link
+        href="https://wa.me/919599193575"
+        target="_blank"
+      >
+        +91 95991 93575
+      </Link>
+    </div>
+  </div>
+
 </div>
-</div> */}
-              {/* <div className={styles.linkGroup}>
-                <h4>COVANTUM TV</h4>
-                <ul>
-                  <li><Link href="#">Expert Speaks</Link></li>
-                  <li><Link href="#">Daily Broadcast</Link></li>
-                </ul>
-                <h4 className={styles.mt4}><Link href="#">PODCAST</Link></h4>
-              </div>
-
-              <div className={styles.linkGroup}>
-                <h4>EXCLUSIVE</h4>
-                <ul>
-                  <li><Link href="#">Brands In Focus</Link></li>
-                  <li><Link href="#">Idea Leader</Link></li>
-                  <li><Link href="#">Listicles</Link></li>
-                  <li><Link href="#">Editorials</Link></li>
-                  <li><Link href="#">Knowledge Hub</Link></li>
-                </ul>
-              </div>
-
-              <div className={styles.linkGroup}>
-                <h4>EVENTS</h4>
-                <ul>
-                  <li><Link href="#">Health Awareness</Link></li>
-                  <li><Link href="#">Conferences & Summits</Link></li>
-                  <li><Link href="#">Brand Solutions</Link></li>
-                </ul>
-                <h4 className={styles.mt4}><Link href="#">PRODUCTS</Link></h4>
-              </div> */}
-            </div>
-            
-          </div>
 
           {/* Social Row */}
           <div className={styles.socialRow}>

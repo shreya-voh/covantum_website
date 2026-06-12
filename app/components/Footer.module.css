@@ -1,3 +1,4 @@
+
 .footer {
   background-color: var(--background);
   color: var(--foreground);
@@ -59,6 +60,8 @@
   gap: 2rem;
 }
 
+
+
 @media (min-width: 640px) {
   .linksGrid {
     grid-template-columns: repeat(4, 1fr);
@@ -91,8 +94,11 @@
 }
 
 .linkGroup li {
+    color: #666;
   margin-bottom: 0.8rem;
 }
+
+
 
 .linkGroup a {
   font-size: 0.9rem;
@@ -309,5 +315,71 @@
   .linksGrid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+    justify-items: start;
+}
+
+
+
+.logoSection {
+  max-width: 420px;
+}
+
+.logoImage {
+  width: 240px;
+  height: auto;
+
+  /* Makes navy logo appear white */
+  filter: brightness(0) invert(1);
+}
+
+.companyDesc {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.8);
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .logoSection {
+    max-width: 100%;
+  }
+}
+
+.logoSection {
+  max-width: 420px;
+  text-align: left;
+  justify-self: start;
+}
+
+.logoImage {
+  display: block;
+  margin: 0;
+}
+
+
+.linkGroup li,
+.linkGroup a {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  .linkGroup li,
+  .linkGroup a {
+    color: #bbb;
   }
 }

@@ -32,7 +32,7 @@ export default function Home() {
               <span style={{ color: 'var(--color-teal)' }}>happens to communicate exceptionally well.</span>
             </h2>
             <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.8' }}>
-              Founded by healthcare professionals with deep roots in medical education, research, and digital media, Covantum is not a generalist agency that works in healthcare. We partner with healthcare companies, brands, and medical professionals to translate complex clinical knowledge into clear, credible, and impactful communication.
+              Founded by healthcare professionals with deep roots in medical education, research, and digital media, Covantum is not a generalist agency support that works in healthcare. We partner with healthcare companies, brands, and medical professionals to translate complex clinical knowledge into clear, credible, and impactful communication.
             </p>
           </div>
         </section>
