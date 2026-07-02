@@ -2,8 +2,9 @@
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ContactForm from "./components/ContactForm";
 
-export default function PrivacyPolicyPage() {
+export default function ContactPage() {
   return (
     <>
       <Header />
@@ -24,7 +25,7 @@ export default function PrivacyPolicyPage() {
               marginBottom: "1rem",
             }}
           >
-            Contact <span style={{ color: "var(--color-gold)" }}>&</span>  <span style={{ color: "var(--color-teal)"}} >Grievance</span>
+            Let&apos;s <span style={{ color: "var(--color-gold)" }}>Collaborate</span>
           </h1>
 
           <p
@@ -35,69 +36,53 @@ export default function PrivacyPolicyPage() {
               color: "rgba(255,255,255,0.85)",
             }}
           >
-               Contact us for inquiries, feedback, or grievance resolution. We are committed
-  to responding in a timely and professional manner. </p>
+            Contact us for inquiries, feedback, or grievance resolution. We
+            are committed to responding in a timely and professional manner.
+          </p>
         </section>
 
         {/* Content Section */}
         <section
           style={{
-            padding: "5rem 2rem",
+            padding: "3rem 1rem 5rem",
             backgroundColor: "#f8f9fb",
           }}
         >
-          <div
+          <ContactForm />
+
+          <p
             style={{
-              maxWidth: "1000px",
-              margin: "0 auto",
-              background: "#fff",
-              padding: "3rem",
-              borderRadius: "12px",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+              maxWidth: "42rem",
+              margin: "2rem auto 0",
+              textAlign: "center",
+              color: "#666",
+              fontSize: "0.95rem",
             }}
           >
-       
-
-            {/* <SectionTitle>Contact Us</SectionTitle> */}
-
-            <Paragraph>
-                For questions regarding our policies, privacy practices, or website content, please contact us at:   
-            </Paragraph>
-  <Paragraph>
-            Email: <a
-    href="mailto:contact@covantum.com"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-     contact@covantum.com
-  </a>
-            </Paragraph>
-         <Paragraph>
-  Phone:{" "}
-  <a
-    href="tel:+919599193575"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    +91 95991 93575
-  </a>
-</Paragraph>
-            <p
+            Prefer email or phone? Reach us at{" "}
+            <a
+              href="mailto:contact@covantum.com"
               style={{
-                marginTop: "3rem",
-                color: "#666",
-                fontSize: "0.95rem",
+                color: "#002B5B",
+                fontWeight: 600,
+                textDecoration: "none",
               }}
             >
-              Last Updated:June 2026
-            </p>
-          </div>
+              contact@covantum.com
+            </a>{" "}
+            or{" "}
+            <a
+              href="tel:+919599193575"
+              style={{
+                color: "#002B5B",
+                fontWeight: 600,
+                textDecoration: "none",
+              }}
+            >
+              +91 95991 93575
+            </a>
+            .
+          </p>
         </section>
       </main>
 

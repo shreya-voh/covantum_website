@@ -57,15 +57,72 @@ export default function PrivacyPolicyPage() {
               boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
             }}
           >
-       
+            <Paragraph>
+              By accessing or using the Covantum website, you agree to these
+              Terms & Conditions.
+            </Paragraph>
 
-            {/* <SectionTitle>3. Cookies and Analytics</SectionTitle> */}
+            <SectionTitle>Website Use</SectionTitle>
+            <Paragraph>
+              You agree to use this website only for lawful purposes and in a
+              manner that does not infringe upon the rights of others or
+              restrict their use of the website.
+            </Paragraph>
 
-<Paragraph>
-  By using this website, you agree to use it lawfully and responsibly. All content on this website is owned by or licensed to  <strong style={{ color: "#002B5B" }}>Covantum</strong> and may not be reproduced without permission. We reserve the right to modify website content at any time without notice.
+            <SectionTitle>Eligibility</SectionTitle>
+            <Paragraph>
+              This website is intended for use by individuals who are 18
+              years of age or older. By using this website, you represent
+              that you are at least 18 years old or are accessing the website
+              under the supervision of a parent, guardian, or authorized
+              organization where permitted by applicable law.
+            </Paragraph>
 
+            <SectionTitle>Intellectual Property</SectionTitle>
+            <Paragraph>
+              All content on this website, including text, graphics, logos,
+              designs, documents, and other materials, is owned by or
+              licensed to{" "}
+              <strong style={{ color: "#002B5B" }}>Covantum</strong> and is
+              protected by applicable intellectual property laws.
+            </Paragraph>
+            <Paragraph>
+              No content may be copied, reproduced, distributed, modified, or
+              reused without prior written permission.
+            </Paragraph>
 
-</Paragraph>
+            <SectionTitle>No Professional Advice</SectionTitle>
+            <Paragraph>
+              Content provided on this website is for informational purposes
+              only and does not constitute medical, legal, regulatory,
+              scientific, or professional advice.
+            </Paragraph>
+
+            <SectionTitle>Limitation of Liability</SectionTitle>
+            <Paragraph>
+              Covantum shall not be liable for any direct, indirect,
+              incidental, consequential, or special damages arising from the
+              use of this website or reliance upon its content.
+            </Paragraph>
+
+            <SectionTitle>Third-Party Links</SectionTitle>
+            <Paragraph>
+              Links to external websites are provided for convenience only.
+              Covantum does not endorse and is not responsible for
+              third-party content.
+            </Paragraph>
+
+            <SectionTitle>Modifications</SectionTitle>
+            <Paragraph>
+              We reserve the right to modify these Terms & Conditions and
+              website content at any time without prior notice.
+            </Paragraph>
+
+            <SectionTitle>Governing Law</SectionTitle>
+            <Paragraph>
+              These Terms shall be governed by and interpreted in accordance
+              with the laws applicable in India.
+            </Paragraph>
 
             <p
               style={{
@@ -74,7 +131,7 @@ export default function PrivacyPolicyPage() {
                 fontSize: "0.95rem",
               }}
             >
-              Last Updated: June 2026
+              Effective Date: June 2026
             </p>
           </div>
         </section>

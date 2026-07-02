@@ -1,20 +1,21 @@
 .marqueeSection {
-  padding: 4rem 0;
-  background-color: var(--surface-primary);
+  padding: 0 0 1.5rem;
+  background-color: #ffffff;
   border-top: 1px solid var(--glass-border);
   border-bottom: 1px solid var(--glass-border);
   overflow: hidden;
 }
 
 .container {
+  width: 70%;
   max-width: 1280px;
   margin: 0 auto;
 }
 
 .label {
   text-align: center;
-  font-size: 0.85rem;
-  letter-spacing: 0.2em;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
   font-weight: 700;
   color: var(--color-navy);
   margin-bottom: 2rem;
@@ -24,7 +25,14 @@
 @media (prefers-color-scheme: dark) {
   .label {
     color: var(--color-gold);
+    opacity: 1;
   }
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .marqueeWrapper {
@@ -38,37 +46,72 @@
 
 .marqueeContent {
   display: flex;
-  white-space: nowrap;
-  animation: scroll 40s linear infinite;
   width: max-content;
 }
 
-.clientItem {
-  display: inline-block;
-  padding: 0 3rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-navy);
-  opacity: 0.4;
-  transition: opacity 0.3s ease, color 0.3s ease;
+.scrollRtl {
+  animation: scroll-rtl 130s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  .clientItem {
-    color: white;
+.scrollLtr {
+  animation: scroll-ltr 130s linear infinite;
+}
+
+.logoTile {
+  flex-shrink: 0;
+  width: 12vw;
+  height: 24px;
+  margin: 0 0.4rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.logoImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .logoTile {
+    width: 10vw;
+    height: 28px;
+    margin: 0 0.6rem;
   }
 }
 
-.clientItem:hover {
-  opacity: 1;
-  color: var(--color-teal);
+@media (min-width: 768px) {
+  .logoTile {
+    width: 8vw;
+    height: 32px;
+  }
 }
 
-@keyframes scroll {
+@media (min-width: 1024px) {
+  .logoTile {
+    width: 96px;
+    height: 38px;
+    margin: 0 1rem;
+  }
+}
+
+@keyframes scroll-rtl {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.33%);
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes scroll-ltr {
+  0% {
+    transform: translateX(-33.333%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

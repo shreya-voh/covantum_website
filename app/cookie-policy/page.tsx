@@ -62,13 +62,51 @@ export default function PrivacyPolicyPage() {
               boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
             }}
           >
-       
-
-            {/* <SectionTitle>Contact Us</SectionTitle> */}
-
+            <SectionTitle>What Are Cookies?</SectionTitle>
             <Paragraph>
-                This website may use cookies and analytics tools to improve user experience and understand website performance. By continuing to use the site, you consent to such use.
-</Paragraph>
+              Cookies are small text files stored on your device when you
+              visit a website. They help websites function efficiently and
+              provide information about site usage.
+            </Paragraph>
+
+            <SectionTitle>How We Use Cookies</SectionTitle>
+            <Paragraph>Covantum may use cookies to:</Paragraph>
+            <ul style={listStyle}>
+              <li>Ensure website functionality</li>
+              <li>Improve user experience</li>
+              <li>Analyze website traffic and performance</li>
+              <li>Maintain website security</li>
+            </ul>
+
+            <SectionTitle>Types of Cookies We May Use</SectionTitle>
+            <Paragraph>
+              <strong style={{ color: "#002B5B" }}>Essential Cookies</strong>
+              <br />
+              Required for website operation and security.
+            </Paragraph>
+            <Paragraph>
+              <strong style={{ color: "#002B5B" }}>Analytics Cookies</strong>
+              <br />
+              Help us understand how visitors interact with our website.
+            </Paragraph>
+            <Paragraph>
+              <strong style={{ color: "#002B5B" }}>Preference Cookies</strong>
+              <br />
+              Remember user settings and preferences.
+            </Paragraph>
+
+            <SectionTitle>Managing Cookies</SectionTitle>
+            <Paragraph>
+              Most browsers allow you to control or disable cookies through
+              browser settings. Disabling cookies may affect website
+              functionality.
+            </Paragraph>
+
+            <SectionTitle>Updates</SectionTitle>
+            <Paragraph>
+              We may update this Cookie Policy periodically. Continued use of
+              the website constitutes acceptance of any updates.
+            </Paragraph>
 
             <p
               style={{
@@ -77,7 +115,7 @@ export default function PrivacyPolicyPage() {
                 fontSize: "0.95rem",
               }}
             >
-              Last Updated: June 2026
+              Effective Date: June 2026
             </p>
           </div>
         </section>

@@ -67,12 +67,10 @@ export default function Footer() {
   <div className={styles.linkGroup}>
     <h4>What We Do</h4>
     <ul>
-      <li><Link href="#">Healthcare Advisory</Link></li>
-      <li><Link href="#">Scientific Communications</Link></li>
-      <li><Link href="#">Doctor Outreach & Engagement</Link></li>
-      <li><Link href="#">Digital Marketing, Media & Technology</Link></li>
-      <li><Link href="#">Brand Consulting</Link></li>
-      <li><Link href="#">Precision Medicine</Link></li>
+      <li><Link href="/#practice-areas">Healthcare Advisory</Link></li>
+      <li><Link href="/#practice-areas">Scientific Communications</Link></li>
+      <li><Link href="/#practice-areas">Doctor Engagement</Link></li>
+      <li><Link href="/#practice-areas">Digital Marketing, Media & Technology</Link></li>
     </ul>
   </div>
 
@@ -143,10 +141,7 @@ export default function Footer() {
             <Link href="/medical-disclaimer">Medical Disclaimer </Link>
               <span className={styles.dot}>•</span>
 
-            <Link href="compliance">Compliance & Ethics Statement</Link>
-            <span className={styles.dot}>•</span>
-
-            <Link href="/contact">Contact/Grievance Information</Link>
+            <Link href="/ai-use-policy">AI & Generative AI Use Policy</Link>
 
           </div>
 
@@ -155,7 +150,7 @@ export default function Footer() {
 
       {/* Solid Bottom Bar */}
       <div className={styles.bottomBar}>
-        &copy; ALL RIGHTS RESERVED BY COVANTUM {new Date().getFullYear()}
+        &copy; ALL RIGHTS RESERVED BY COVANTUM {new Date().getFullYear()} (unit of VOH Media Tech PVT LTD)
       </div>
     </footer>
   );

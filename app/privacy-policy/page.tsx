@@ -58,26 +58,116 @@ export default function PrivacyPolicyPage() {
               boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
             }}
           >
-       
-
-            {/* <SectionTitle>3. Cookies and Analytics</SectionTitle> */}
-
             <Paragraph>
-  We respect your privacy. Information submitted through our website,
-  including contact forms and inquiries, is used solely to respond to your
-  requests and provide our services. We do not sell personal information to
-  third parties. We implement reasonable measures to protect the information
-  you share with us. For privacy-related inquiries, please contact us at{" "}
-  <a
-    href="mailto:contact@covantum.com"
-    style={{
-      color: "#002B5B",
-      fontWeight: 600,
-      textDecoration: "none",
-    }}
-  >
-    contact@covantum.com
-  </a>.  
+              Covantum ("we," "our," or "us") respects your privacy and is
+              committed to protecting the personal information you share with
+              us.
+            </Paragraph>
+
+            <SectionTitle>Information We Collect</SectionTitle>
+            <Paragraph>
+              We may collect personal information that you voluntarily
+              provide through our website, including:
+            </Paragraph>
+            <ul style={listStyle}>
+              <li>Name</li>
+              <li>Email address</li>
+              <li>Phone number</li>
+              <li>Organization name</li>
+              <li>Information submitted through contact forms or inquiries</li>
+            </ul>
+            <Paragraph>
+              We may also collect certain technical information
+              automatically, including IP address, browser type, device
+              information, and website usage data through cookies and
+              analytics tools.
+            </Paragraph>
+
+            <SectionTitle>How We Use Information</SectionTitle>
+            <Paragraph>We use collected information to:</Paragraph>
+            <ul style={listStyle}>
+              <li>Respond to inquiries and requests</li>
+              <li>Provide information about our services</li>
+              <li>Improve website functionality and user experience</li>
+              <li>Maintain website security and performance</li>
+              <li>Comply with legal and regulatory obligations</li>
+            </ul>
+
+            <SectionTitle>Information Sharing</SectionTitle>
+            <Paragraph>
+              We do not sell, rent, or trade personal information to third
+              parties.
+            </Paragraph>
+            <Paragraph>
+              Information may be shared with trusted service providers who
+              support website operations or where required by law,
+              regulation, or legal process.
+            </Paragraph>
+
+            <SectionTitle>Children's Privacy</SectionTitle>
+            <Paragraph>
+              This website and our services are intended for business,
+              professional, and healthcare audiences and are not directed to
+              individuals under the age of 18.
+            </Paragraph>
+            <Paragraph>
+              We do not knowingly collect personal information from children
+              under 18 years of age. If we become aware that personal
+              information has been collected from a person under 18 without
+              appropriate consent where required by law, we will take
+              reasonable steps to delete such information promptly.
+            </Paragraph>
+            <Paragraph>
+              If you believe that a child under 18 has provided personal
+              information through this website, please contact us at{" "}
+              <a
+                href="mailto:contact@covantum.com"
+                style={{
+                  color: "#002B5B",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                contact@covantum.com
+              </a>
+              .
+            </Paragraph>
+
+            <SectionTitle>Data Security</SectionTitle>
+            <Paragraph>
+              We implement reasonable administrative, technical, and
+              organizational measures to protect personal information against
+              unauthorized access, disclosure, alteration, or destruction.
+            </Paragraph>
+
+            <SectionTitle>Third-Party Links</SectionTitle>
+            <Paragraph>
+              Our website may contain links to third-party websites. We are
+              not responsible for the privacy practices or content of those
+              websites.
+            </Paragraph>
+
+            <SectionTitle>Your Rights</SectionTitle>
+            <Paragraph>
+              Subject to applicable laws, you may request access to,
+              correction of, or deletion of your personal information by
+              contacting us.
+            </Paragraph>
+
+            <SectionTitle>Contact</SectionTitle>
+            <Paragraph>
+              For privacy-related questions or requests, email us at{" "}
+              <a
+                href="mailto:contact@covantum.com"
+                style={{
+                  color: "#002B5B",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                contact@covantum.com
+              </a>
+              .
             </Paragraph>
 
             <p
@@ -87,7 +177,7 @@ export default function PrivacyPolicyPage() {
                 fontSize: "0.95rem",
               }}
             >
-              Last Updated: June 2026
+              Effective Date: June 2026
             </p>
           </div>
         </section>

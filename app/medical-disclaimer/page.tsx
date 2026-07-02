@@ -57,14 +57,81 @@ export default function PrivacyPolicyPage() {
               boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
             }}
           >
-       
-
-            {/* <SectionTitle>Contact Us</SectionTitle> */}
-
+            <SectionTitle>Medical Disclaimer</SectionTitle>
             <Paragraph>
-              The information on this website is provided for general informational purposes only and does not constitute medical, clinical, legal, or professional advice. Healthcare decisions should always be made in consultation with qualified professionals.
-           </Paragraph>
-  
+              The information provided on this website is for general
+              informational purposes only. It does not constitute medical,
+              clinical, legal, regulatory, or professional advice and should
+              not be relied upon as a substitute for consultation with
+              qualified professionals.
+            </Paragraph>
+            <Paragraph>
+              Covantum does not provide patient care, diagnosis, treatment
+              recommendations, or medical advice through this website. Any
+              healthcare-related decisions should be made in consultation
+              with appropriately qualified healthcare professionals.
+            </Paragraph>
+
+            <SectionTitle>Compliance & Ethics Statement</SectionTitle>
+            <Paragraph>
+              Covantum is committed to conducting business with integrity,
+              transparency, and professionalism.
+            </Paragraph>
+            <Paragraph>
+              Our healthcare communication, medical affairs, scientific
+              engagement, and consulting activities are designed to support
+              ethical stakeholder interactions and compliance with applicable
+              laws, regulations, industry codes, and professional standards.
+              Where relevant, our work aligns with principles reflected in
+              industry guidance, including the Uniform Code for
+              Pharmaceutical Marketing Practices (UCPMP).
+            </Paragraph>
+            <Paragraph>
+              We strive to maintain scientific accuracy, balanced
+              communication, confidentiality, and respect for patient welfare
+              in all engagements.
+            </Paragraph>
+
+            <SectionTitle>Contact & Grievance Information</SectionTitle>
+            <Paragraph>
+              For questions, concerns, complaints, or requests regarding our
+              website, privacy practices, or services, please contact:
+            </Paragraph>
+            <Paragraph>
+              <strong style={{ color: "#002B5B" }}>Covantum</strong>
+              <br />
+              Email:{" "}
+              <a
+                href="mailto:contact@covantum.com"
+                style={{
+                  color: "#002B5B",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                contact@covantum.com
+              </a>
+              <br />
+              Phone:{" "}
+              <a
+                href="tel:+919599193575"
+                style={{
+                  color: "#002B5B",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                +91-9599193575
+              </a>
+              <br />
+              Address: 104, Tower B, Unitech Business Zone, Sector 50,
+              Gurgaon-122018, Haryana, India.
+            </Paragraph>
+            <Paragraph>
+              We will make reasonable efforts to acknowledge and respond to
+              inquiries in a timely manner.
+            </Paragraph>
+
             <p
               style={{
                 marginTop: "3rem",
