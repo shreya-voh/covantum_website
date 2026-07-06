@@ -95,13 +95,13 @@ export default function PrivacyPolicyPage() {
 
             <SectionTitle>Information Sharing</SectionTitle>
             <Paragraph>
-              We do not sell, rent, or trade personal information to third
+              We do not sell, rent or trade personal information to third
               parties.
             </Paragraph>
             <Paragraph>
               Information may be shared with trusted service providers who
               support website operations or where required by law,
-              regulation, or legal process.
+              regulation or legal process.
             </Paragraph>
 
             <SectionTitle>Children's Privacy</SectionTitle>
