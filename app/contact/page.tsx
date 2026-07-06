@@ -36,7 +36,7 @@ export default function ContactPage() {
               color: "rgba(255,255,255,0.85)",
             }}
           >
-            Contact us for inquiries, feedback, or grievance resolution. We
+            Contact us for inquiries, feedback or grievance resolution. We
             are committed to responding in a timely and professional manner.
           </p>
         </section>
