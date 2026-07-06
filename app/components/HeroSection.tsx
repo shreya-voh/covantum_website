@@ -504,7 +504,7 @@ A Healthcare Growth Partner */}
             variants={textVariant}
             className={styles.subtitle}
           >
-           Covantum is where healthcare companies, brands and medical professionals come to communicate more effectively, grow with purpose and build lasting credibility.
+           Covantum helps healthcare companies, brands and medical professionals communicate more effectively, grow with purpose and build lasting credibility.
           </motion.p>
 
           <motion.div
