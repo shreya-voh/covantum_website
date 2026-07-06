@@ -150,7 +150,7 @@ export default function Footer() {
 
       {/* Solid Bottom Bar */}
       <div className={styles.bottomBar}>
-        &copy; ALL RIGHTS RESERVED BY COVANTUM {new Date().getFullYear()} (unit of VOH Media Tech PVT LTD)
+        &copy; ALL RIGHTS RESERVED BY COVANTUM {new Date().getFullYear()} (A unit of VOH MEDIA TECH PVT LTD)
       </div>
     </footer>
   );
