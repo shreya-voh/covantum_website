@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import styles from './WhoWeServe.module.css';
 
 const clients = [
-  "Healthcare companies, pharma, biotech, and medical device firms seeking credible, UCPMP-compliant doctor engagement and publication support",
+  "Healthcare companies, pharma, biotech and medical device firms seeking credible, UCPMP-compliant doctor engagement and publication support",
   "Hospital groups and healthcare networks building their brand and physician relationships",
   "Health-tech and medical device companies entering or expanding in the Indian market",
   "Healthcare startups needing strategic advisory and go-to-market support",
@@ -25,7 +25,7 @@ export default function WhoWeServe() {
           <h2 className={styles.title}>Who We Serve</h2>
           <div className={styles.separator}></div>
           <p className={styles.subtitle}>
-            We work with organisations across the healthcare ecosystem — wherever precision, trust, and impact matter.
+            We work with organisations across the healthcare ecosystem — wherever precision, trust and impact matter.
           </p>
         </motion.div>
 

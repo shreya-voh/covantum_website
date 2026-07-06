@@ -7,7 +7,7 @@ import styles from './Values.module.css';
 const values = [
   {
     title: "Precision",
-    desc: "Every recommendation, article, and campaign we produce is grounded in evidence and crafted with exactness. We do not approximate.",
+    desc: "Every recommendation, article and campaign we produce is grounded in evidence and crafted with exactness. We do not approximate.",
     icon: <Compass size={40} strokeWidth={1.5} />
   },
   {
@@ -42,7 +42,7 @@ export default function Values() {
           >
             <h2 className={styles.title}>Our Core<br/><span className="text-gold">Values</span></h2>
             <p className={styles.subtitle}>
-              Four pillars that guide every engagement, every recommendation, and every relationship we build.
+              Four pillars that guide every engagement, every recommendation and every relationship we build.
             </p>
             <div className={styles.accentLine}></div>
           </motion.div>

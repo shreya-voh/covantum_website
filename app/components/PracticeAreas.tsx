@@ -7,25 +7,25 @@ import styles from './PracticeAreas.module.css';
 const practices = [
   {
     title: "Healthcare Advisory",
-    desc: "Strategic consulting for healthcare companies, brands, hospital groups, and health-tech firms. Market access, brand strategy, stakeholder engagement, and regulatory navigation.",
+    desc: "Strategic consulting for healthcare companies, brands, hospital groups and health-tech firms. Market access, brand strategy, stakeholder engagement and regulatory navigation.",
     icon: <BrainCircuit size={32} />,
     colorClass: styles.gold
   },
   {
     title: "Scientific Communications",
-    desc: "End-to-end medical writing and publication support — survey design, data analysis, manuscript preparation, author coordination, and journal submission. Compliant publication services for healthcare companies.",
+    desc: "End-to-end medical writing and publication support — survey design, data analysis, manuscript preparation, author coordination and journal submission. Compliant publication services for healthcare companies.",
     icon: <Microscope size={32} />,
     colorClass: styles.teal
   },
   {
     title: "Doctor Engagement",
-    desc: "Multi-channel programmes connecting healthcare brands with clinicians — continuing medical education support, webinars, podcasts for doctors, and scientific community building according to regulatory compliance.",
+    desc: "Multi-channel programmes connecting healthcare brands with clinicians — continuing medical education support, webinars, podcasts for doctors and scientific community building according to regulatory compliance.",
     icon: <BarChart3 size={32} />,
     colorClass: styles.navy
   },
   {
     title: "Digital Marketing, Media & Technology",
-    desc: "Performance-driven digital campaigns — SEO, social media, content marketing, multimedia production, targeted digital outreach to doctors and healthcare professionals across compliant platforms and Tech & AI products.",
+    desc: "Performance-driven digital campaigns — SEO, social media, content marketing, multimedia production, Tech & AI products, targeted digital outreach to doctors and healthcare professionals across compliant platforms.",
     icon: <Target size={32} />,
     colorClass: styles.goldTeal
   }
@@ -68,7 +68,7 @@ export default function PracticeAreas() {
               What We <span className="text-teal">Do</span>
             </h2>
             <p className={styles.subtitle}>
-              we operates across four practice areas — each distinct, but all connected by the same commitment to precision and trust.</p>
+              We operate across four practice areas — each distinct, but all connected by the same commitment to precision and trust.</p>
           </motion.div>
         </div>
         

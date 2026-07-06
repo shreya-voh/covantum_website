@@ -22,13 +22,16 @@ export default function About() {
               About <span style={{ color: 'var(--color-gold)' }}>Us</span>
             </h1>
             <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.9)', fontWeight: '300' }}>
-              Covantum is a healthcare advisory and communication firm built at the intersection of science, strategy, data, and emerging technology. We partner with healthcare companies, brands, and medical professionals to translate complex clinical knowledge into clear, credible, and impactful communication.
+              Covantum is a healthcare advisory and communication organization built at the intersection of science, strategy, data and emerging technology. We partner with healthcare companies, brands and medical professionals to translate complex clinical knowledge into clear, credible and impactful communication.
 <br/>
-Whatever the challenge — strategic or commercial — Covantum brings rigour to every conversation and precision to every outcome.
 <br/>
-We understand the regulatory environment, the clinical mindset, and the commercial imperatives of the healthcare industry — and we work fluently across all three.
+Whatever the challenge — strategic, scientific or commercial — Covantum brings rigour to every conversation and precision to every outcome.
 <br/>
-Founded by healthcare professionals with deep roots in medical education, research, and digital media, Covantum is not a generalist agency that works in healthcare. We are a healthcare-first firm that happens to communicate exceptionally well.
+<br/>
+We understand the regulatory environment, the clinical mindset and the commercial imperatives of the healthcare industry — and we work fluently across all three.
+<br/>
+<br/>
+Founded by healthcare professionals with deep roots in medical education, research and digital media, Covantum is not a generalist agency that works in healthcare. We are a healthcare-first organization focused on effective communication with authenticity and purpose.
               </p>
           </div>
         </section>
@@ -53,10 +56,10 @@ Founded by healthcare professionals with deep roots in medical education, resear
                 Our Mission
               </h2>
               <p style={{ fontSize: '1.1rem', color: '#444', lineHeight: '1.8', fontStyle: 'italic', borderLeft: '4px solid var(--color-gold)', paddingLeft: '1.5rem' }}>
-                "To deliver precision advisory, evidence-based  communications, and data-driven digital strategies that help healthcare organisations make better decisions, reach the right audiences, and build lasting credibility with doctors, patients, and industry stakeholders."
+                "To deliver precision advisory, evidence-based  communications and data-driven digital strategies that help healthcare organisations make better decisions, reach the right audiences and build lasting credibility with doctors, patients and industry stakeholders."
               </p>
               <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.8', marginTop: '1.5rem' }}>
-                We fulfil this mission by combining deep healthcare expertise with creative intelligence — bringing together medical experts, strategic advisors, digital specialists, and industry consultants under one roof to serve our clients with integrity and measurable impact.
+                We fulfil this mission by combining deep healthcare expertise with creative intelligence — bringing together medical experts, strategic advisors, digital specialists and industry consultants under one roof to serve our clients with integrity and measurable impact.
               </p>
             </div>
 

@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Covantum | Healthcare Advisory & Communication",
-  description: "Covantum is where healthcare companies, brands, and medical professionals come to think more clearly, communicate more effectively, and grow with purpose.",
+  description: "Covantum is where healthcare companies, brands and medical professionals come to build lasting credibility, communicate more effectively and grow with purpose.",
 };
 
 export default function RootLayout({

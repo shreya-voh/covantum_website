@@ -478,7 +478,7 @@ export default function HeroSection() {
             className={styles.eyebrow}
           >
             {/* A Healthcare-First Firm */}
-A Strategic Healthcare-Partner
+A Strategic Healthcare Partner
             {/* A Healthcare Advisory Firm
 A Healthcare Consulting & Communications Firm
 A Healthcare Intelligence Firm
@@ -504,9 +504,7 @@ A Healthcare Growth Partner */}
             variants={textVariant}
             className={styles.subtitle}
           >
-            Covantum is where healthcare companies, brands, and medical
-            professionals come to think more clearly, communicate more
-            effectively, and grow with purpose.
+           Covantum is where healthcare companies, brands and medical professionals come to build lasting credibility, communicate more effectively and grow with purpose.
           </motion.p>
 
           <motion.div
