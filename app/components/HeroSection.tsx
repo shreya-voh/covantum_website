@@ -492,9 +492,17 @@ A Healthcare Growth Partner */}
             variants={textVariant}
             className={styles.title}
           >
-            Thinking <span className="text-gold">clearly.</span>
+            {/* Communicate clearly. Grow with purpose. */}
+            {/* Thinking <span className="text-gold">clearly.</span>
             <br />
-            Communicating <span className="text-teal">effectively.</span>
+            Communicating <span className="text-teal">effectively.</span> */}
+
+            <span style={{ whiteSpace: "nowrap" }}>
+              Precision <span className="text-gold">Thinking.</span>
+            </span>{" "}
+            <span style={{ whiteSpace: "nowrap" }}>
+              Proven <span className="text-teal">Outcomes.</span>
+            </span>
           </motion.h1>
 
           <motion.p
