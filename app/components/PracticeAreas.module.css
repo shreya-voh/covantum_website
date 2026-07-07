@@ -67,11 +67,7 @@
 
 .cardTitle {
   font-size: 1.5rem;
-  color: var(--color-navy);
-}
-
-@media (prefers-color-scheme: dark) {
-  .cardTitle { color: var(--foreground); }
+  color: var(--foreground);
 }
 
 .cardDesc {
@@ -111,13 +107,18 @@
 .teal .hexagonAccent { background: var(--color-teal); }
 
 .navy .iconWrapper {
-  background: rgba(0, 35, 72, 0.1);
-  color: var(--color-navy);
-}
-@media (prefers-color-scheme: dark) {
-  .navy .iconWrapper { color: var(--color-navy-light); background: rgba(0, 54, 107, 0.2); }
+  background: rgba(0, 54, 107, 0.2);
+  color: var(--color-navy-light);
 }
 .navy .hexagonAccent { background: var(--color-navy); }
+
+/* Purely decorative accent shape — avoid it collapsing into a solid block
+   under Windows High Contrast mode. */
+@media (forced-colors: active) {
+  .hexagonAccent {
+    display: none;
+  }
+}
 
 .goldTeal .iconWrapper {
   background: var(--gradient-brand);

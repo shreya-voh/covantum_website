@@ -43,13 +43,7 @@
 .desc {
   font-size: 0.85rem;
   line-height: 1.6;
-  color: #555;
-}
-
-@media (prefers-color-scheme: dark) {
-  .desc {
-    color: #aaa;
-  }
+  color: #aaa;
 }
 
 /* Right Columns */
@@ -74,13 +68,7 @@
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-navy);
-}
-
-@media (prefers-color-scheme: dark) {
-  .linkGroup h4 {
-    color: var(--color-gold);
-  }
+  color: var(--color-gold);
 }
 
 .linkGroup h4.mt4 {
@@ -102,22 +90,13 @@
 
 .linkGroup a {
   font-size: 0.9rem;
-  color: #666;
+  color: #bbb;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .linkGroup a:hover {
-  color: var(--color-teal);
-}
-
-@media (prefers-color-scheme: dark) {
-  .linkGroup a {
-    color: #bbb;
-  }
-  .linkGroup a:hover {
-    color: var(--color-teal-light);
-  }
+  color: var(--color-teal-light);
 }
 
 /* Social Row */
@@ -158,17 +137,17 @@
   align-items: center;
   gap: 1rem;
   font-size: 0.9rem;
-  color: #555;
+  color: #aaa;
   margin-bottom: 1rem;
 }
 
 .bottomLinks a {
-  color: #555;
+  color: #aaa;
   transition: color 0.2s;
 }
 
 .bottomLinks a:hover {
-  color: var(--color-teal);
+  color: var(--color-teal-light);
 }
 
 .dot {
@@ -176,30 +155,15 @@
   font-size: 0.8rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .bottomLinks, .bottomLinks a {
-    color: #aaa;
-  }
-  .bottomLinks a:hover {
-    color: var(--color-teal-light);
-  }
-}
-
 /* Bottom Bar */
 .bottomBar {
-  background-color: var(--color-teal);
+  background-color: var(--color-teal-dark);
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-}
-
-@media (prefers-color-scheme: dark) {
-  .bottomBar {
-    background-color: var(--color-teal-dark);
-  }
 }
 
 .socialIcon {
@@ -258,7 +222,7 @@
 }
 
 .contactInfo {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.75rem; /* More space between icon and text */
@@ -291,8 +255,15 @@
   margin-bottom: 0.75rem;
 }
 
+/* Address lines read as one block, not a spaced-out link list.
+   Needs .linkGroup prefix to outrank .linkGroup ul li's specificity. */
+.linkGroup .addressList li {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
 .contactInfo {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -373,13 +344,6 @@
 .linkGroup li,
 .linkGroup a {
   font-size: 0.9rem;
-  color: #666;
+  color: #bbb;
   line-height: 1.6;
-}
-
-@media (prefers-color-scheme: dark) {
-  .linkGroup li,
-  .linkGroup a {
-    color: #bbb;
-  }
 }

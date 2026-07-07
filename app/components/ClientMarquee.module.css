@@ -17,15 +17,26 @@
   font-size: 1.5rem;
   letter-spacing: 0.15em;
   font-weight: 700;
-  color: var(--color-navy);
+  color: var(--color-gold);
   margin-bottom: 2rem;
-  opacity: 0.6;
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
   .label {
-    color: var(--color-gold);
-    opacity: 1;
+    font-size: 1.05rem;
+    letter-spacing: 0.07em;
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
   }
 }
 

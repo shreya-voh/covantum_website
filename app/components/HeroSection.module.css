@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   background-color: var(--color-navy-dark);
-  margin: 100px 2.5rem 0 2.5rem;
+  margin: 92px 2.5rem 0 2.5rem;
   padding: 0 0 2rem 0;
   border-radius: 24px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -42,6 +42,15 @@
   border-radius: 50%;
   background: radial-gradient(circle, rgba(215, 176, 104, 0.1) 0%, rgba(0, 35, 72, 0) 70%);
   filter: blur(80px);
+}
+
+/* Purely decorative — hide under Windows High Contrast rather than let it
+   collapse into a solid color block that can obscure the hero content. */
+@media (forced-colors: active) {
+  .gradientOrbPrimary,
+  .gradientOrbSecondary {
+    display: none;
+  }
 }
 
 .hexagon {
@@ -106,6 +115,10 @@
   margin-bottom: 1.5rem;
 }
 
+.titleNowrap {
+  white-space: nowrap;
+}
+
 .subtitle {
   color: rgba(255, 255, 255, 0.8);
   font-size: clamp(1.1rem, 2vw, 1.25rem);
@@ -142,7 +155,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    margin: 90px 1rem 0 1rem;
+    margin: 92px 1rem 0 1rem;
     min-height: auto;
     border-radius: 20px;
     transform: none;
@@ -167,10 +180,11 @@
   }
 
   .title {
-    font-size: 2.6rem;
-    line-height: 1.15;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    /* Scales with viewport width so "Precision Thinking." and "Proven
+       Outcomes." each keep fitting on their own line (see .titleNowrap)
+       instead of overflowing on narrow phones. */
+    font-size: clamp(1.6rem, 7.4vw, 2.6rem);
+    line-height: 1.2;
     margin-bottom: 1rem;
   }
 
@@ -208,16 +222,11 @@
 
 @media (max-width: 480px) {
   .hero {
-    margin: 85px 0.75rem 0 0.75rem;
+    margin: 92px 0.75rem 0 0.75rem;
   }
 
   .container {
     padding: 1.5rem 1rem;
-  }
-
-  .title {
-    font-size: 2.2rem;
-    line-height: 1.15;
   }
 
   .subtitle {

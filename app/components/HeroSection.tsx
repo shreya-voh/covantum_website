@@ -497,10 +497,10 @@ A Healthcare Growth Partner */}
             <br />
             Communicating <span className="text-teal">effectively.</span> */}
 
-            <span style={{ whiteSpace: "nowrap" }}>
+            <span className={styles.titleNowrap}>
               Precision <span className="text-gold">Thinking.</span>
             </span>{" "}
-            <span style={{ whiteSpace: "nowrap" }}>
+            <span className={styles.titleNowrap}>
               Proven <span className="text-teal">Outcomes.</span>
             </span>
           </motion.h1>

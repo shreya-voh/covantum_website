@@ -78,7 +78,7 @@ export default function Footer() {
   <div className={styles.linkGroup } >
     <h4>Corporate Office</h4>
 
-    <ul >
+    <ul className={styles.addressList}>
       <li>104, First Floor, Tower B</li>
       <li>Unitech Business Zone</li>
       <li>Sector 50, Gurgaon</li>
@@ -102,6 +102,13 @@ export default function Footer() {
         target="_blank"
       >
         +91 95991 93575
+      </Link>
+    </div>
+
+    <div className={styles.contactInfo}>
+      <FaEnvelope size={16} style={{ color: "var(--color-gold)" }} />
+      <Link href="mailto:contact@covantum.com">
+        contact@covantum.com
       </Link>
     </div>
   </div>
