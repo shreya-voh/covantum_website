@@ -72,14 +72,14 @@ export default function ContactPage() {
             </a>{" "}
             or{" "}
             <a
-              href="tel:+919599193575"
+              href="tel:+917428881191"
               style={{
                 color: "#002B5B",
                 fontWeight: 600,
                 textDecoration: "none",
               }}
             >
-              +91 95991 93575
+              +91 74288 81191
             </a>
             .
           </p>

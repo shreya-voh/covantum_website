@@ -41,8 +41,8 @@ export default function Footer() {
       <Image
       src="/cov_logo.png"
       alt="Covantum Logo"
-      width={190}
-      height={55}
+      width={224}
+      height={79}
       style={{
         filter: "brightness(0) invert(1)",
         display: "block",
@@ -98,10 +98,10 @@ export default function Footer() {
     <div className={styles.contactInfo}>
       <FaWhatsapp size={16} style={{ color: "#25D366" }} />
       <Link
-        href="https://wa.me/919599193575"
+        href="https://wa.me/917428881191"
         target="_blank"
       >
-        +91 95991 93575
+        +91 74288 81191
       </Link>
     </div>
 

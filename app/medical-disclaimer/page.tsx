@@ -114,14 +114,14 @@ export default function PrivacyPolicyPage() {
               <br />
               Phone:{" "}
               <a
-                href="tel:+919599193575"
+                href="tel:+917428881191"
                 style={{
                   color: "#002B5B",
                   fontWeight: 600,
                   textDecoration: "none",
                 }}
               >
-                +91-9599193575
+                +91-7428881191
               </a>
               <br />
               Address: 104, Tower B, Unitech Business Zone, Sector 50,

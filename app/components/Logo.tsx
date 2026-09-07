@@ -39,8 +39,8 @@ export default function Logo({
       <Image
         src="/cov_logo.png"
         alt="Covantum Logo"
-        width={190}
-        height={55}
+        width={224}
+        height={79}
         className={white ? styles.whiteLogo : ''}
       />
       
