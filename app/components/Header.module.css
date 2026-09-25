@@ -5,14 +5,14 @@
   width: 100%;
   z-index: 100;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 1.15rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   background: #ffffff;
 }
 
 .headerScrolled {
-  padding-top: 0.75rem;
-  padding-bottom: 0.35rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   background: rgba(0, 35, 72, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);

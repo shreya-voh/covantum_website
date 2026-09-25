@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main style={{ backgroundColor: '#ffffff' }}>
+      <main style={{ backgroundColor: '#ffffff', overflow: 'hidden' }}>
         <HeroSection />
         
         <section style={{ 

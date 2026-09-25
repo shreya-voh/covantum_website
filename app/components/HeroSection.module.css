@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   background-color: var(--color-navy-dark);
-  margin: 103px 2.5rem 0 2.5rem;
+  margin: 80px 2.5rem 0 2.5rem;
   padding: 0 0 2rem 0;
   border-radius: 24px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -154,7 +154,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    margin: 103px 1rem 0 1rem;
+    margin: 80px 1rem 0 1rem;
     min-height: auto;
     border-radius: 20px;
     transform: none;
@@ -221,7 +221,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    margin: 103px 0.75rem 0 0.75rem;
+    margin: 80px 0.75rem 0 0.75rem;
   }
 
   .container {
